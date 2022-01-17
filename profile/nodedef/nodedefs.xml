@@ -1,0 +1,80 @@
+<nodeDefs>
+
+<!-- The node server control Node-->
+  <nodeDef id="ctl" nls="ctl">
+    <sts>
+      <st id="ST" editor="bool" />
+      <st id="GV0" editor="errors" />
+      <st id="GV1" editor="bool" />
+      <st id="GV2" editor="bool" />
+      <st id="GV3" editor="bool" />
+      <st id="GV4" editor="bool" />
+      <st id="GV5" editor="running" />
+	  </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="RAIN_DELAY">
+          <p id="" editor="rainDelay" init="GV0" />
+        </cmd>
+        <cmd id="STOP_ALL_STATIONS" />
+        <cmd id="REBOOT" />
+         <cmd id="ENABLE" />
+        <cmd id="DISABLE" />
+      </accepts>
+    </cmds>
+  </nodeDef>
+
+
+
+  <!-- Program Node -->
+  <nodeDef id="program"  nls="program">
+    <sts>
+      <st id="GV0" editor="bool" />
+      <st id="GV1" editor="bool" />
+	  </sts>
+    <cmds>
+      <sends />
+	    <accepts>
+        <cmd id="MANUAL_RUN_ONCE" />
+        <cmd id="STOP_ALL_STATIONS" />
+        <cmd id="ENABLE" />
+        <cmd id="DISABLE" />
+      </accepts>
+    </cmds>
+  </nodeDef>
+
+
+  <!-- Zone Parent -->
+  <nodeDef id="zoneParent"  nls="nlsZoneParent">
+    <sts>
+      <st id="GV0" editor="station" />
+	  </sts>
+    <cmds>
+      <sends />
+	    <accepts>
+      </accepts>
+    </cmds>
+  </nodeDef>
+
+  <!-- Zone Node -->
+  <nodeDef id="nodeDefZone"  nls="nlsZone">
+    <sts>
+      <st id="ST" editor="zoneStatus" />
+      <st id="GV0" editor="manualRun" />
+      <st id="GV1" editor="bool" />
+	  </sts>
+    <cmds>
+      <sends />
+	    <accepts>
+        <cmd id="MANUAL_RUN_TIME">
+          <p id="" editor="manualRun" init="GV0" />
+        </cmd>
+        <cmd id="DON" />
+        <cmd id="DOF" />
+      </accepts>
+    </cmds>
+  </nodeDef>
+
+
+</nodeDefs>

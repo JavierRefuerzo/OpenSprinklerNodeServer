@@ -1,0 +1,35 @@
+{
+    "name": "OpenSprinkler Node Server",
+    "docs": "https://forum.universal-devices.com/forum/221-polyglot-v3-nodeservers-pg3/",
+    "type": "python3",
+    "executable": "initializer.py",
+    "install": "install.sh",
+    "description": "OpenSprinkler Controller.",
+    "notice": "",
+    "shortPoll": "5",
+    "longPoll": "30",
+	"logLevel": "INFO",
+    "profile_version": "0.0.1",
+	"customParams": {
+		"password": "opendoor",
+		"url": "http://192.168.X.X",
+		"manualRunTimeSeconds": "480"
+	},
+    "credits": [
+    	{
+    		"title": "OpenSprinkler Node Server for ISY/Polyglot",
+    		"author": "Javier Refuerzo",
+    		"version": "2022.1.11",
+    		"date": "January 11, 2022",
+    		"source": "https://forum.universal-devices.com/forum/221-polyglot-v3-nodeservers-pg3/",
+			"license": "https://forum.universal-devices.com/forum/221-polyglot-v3-nodeservers-pg3/"
+		}
+	],
+	"store" : {
+		"developer": "javier@universal-devices.com",
+		"price": 0.00,
+		"recurring": 0,
+		"recurring_interval": "month",
+		"recurring_period": 0
+	}
+}

@@ -1,0 +1,68 @@
+
+#####Controller
+
+ND-ctl-NAME = OpenSprinkler Controller
+ND-ctl-ICON = Output
+
+ST-ctl-ST-NAME = NodeServer Online
+ST-ctl-GV0-NAME = Last Error Message
+ST-ctl-GV1-NAME = Sprinkler Controller Enabled
+ST-ctl-GV2-NAME = Rain Delay Active
+ST-ctl-GV3-NAME = Sensor One Active
+ST-ctl-GV4-NAME = Sensor Two Active
+ST-ctl-GV5-NAME = Running Program
+
+CMD-ctl-RAIN_DELAY-NAME = Set Rain Delay
+CMD-ctl-REBOOT-NAME = Reboot
+
+ERRORS-0 = None
+ERRORS-1 = Missing Password
+ERRORS-2 = Missing IP Address
+ERRORS-3 = Connection Error
+ERRORS-4 = CheckLogs
+ERRORS-5 = Invalid URL
+ERRORS-6 = OpenSprinkler Firmware Update Required (min 2.1.9)
+
+RUNNING-0 = None
+RUNNING-99 = Manually Started Station
+RUNNING-254 = Manually Started Program
+
+
+
+#####Zone Parent
+
+ND-zoneParent-NAME = Stations
+ND-zoneParent-ICON = Output
+
+ST-nlsZoneParent-GV0-NAME = Stations queued
+
+STATIONS-0 = None
+
+#####Zone Nodes
+
+zoneStatus-0 = Off
+zoneStatus-1 = On
+
+ND-nodeDefZone-NAME = Zone
+ND-nodeDefZone-ICON = Output
+ST-nlsZone-ST-NAME = Status
+ST-nlsZone-GV0-NAME = Manual Run Time
+ST-nlsZone-GV1-NAME = Station Queued
+
+
+CMD-MANUAL_RUN_TIME-NAME = Manual Run Time
+
+
+#####Program Nodes
+
+ND-program-NAME = Program
+ND-program-ICON = Output
+ST-program-GV0-NAME = Enabled
+ST-program-GV1-NAME = Running
+
+#####Shared Command names (no nls defined)
+
+CMD-MANUAL_RUN_ONCE-NAME = Run
+CMD-STOP_ALL_STATIONS-NAME = Stop All Stations
+CMD-ENABLE-NAME = Enable
+CMD-DISABLE-NAME = Disable

@@ -1,0 +1,24 @@
+<editors>
+	<!-- Boolean -->
+	<editor id="bool">
+		<range uom="2" subset="0,1" />
+	</editor>
+	<editor id="zoneStatus">
+		<range uom="25" subset="0,1" nls="zoneStatus"/>
+	</editor>
+	<editor id="manualRun">
+		<range uom="57" min="0" max="64800" prec="0" />
+	</editor>
+	<editor id="rainDelay">
+		<range uom="20" min="0" max="32767" prec="0" />
+	</editor>
+	<editor id="errors">
+		<range uom="25" min="0" max="6" prec="0" nls="ERRORS" /> 
+	</editor>
+	<editor id="running">
+		<range uom="25" min="0" max="254" prec="0" nls="RUNNING" /> 
+	</editor>
+	<editor id="stations">
+		<range uom="25" min="0" max="64" prec="0" nls="STATIONS"/> 
+	</editor>
+</editors>
