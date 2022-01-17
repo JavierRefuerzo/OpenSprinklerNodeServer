@@ -110,6 +110,7 @@ class Controller :
         self.stationList.parse(jsonStations)
         if (self.stationList.errors != None):
             self.setErrors(self.stationList.errors)
+            return
 
         # get station values
         statusValues = StationStatus(self.stationList)
