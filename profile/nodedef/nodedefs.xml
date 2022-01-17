@@ -15,7 +15,7 @@
       <sends />
       <accepts>
         <cmd id="RAIN_DELAY">
-          <p id="" editor="rainDelay" init="GV0" />
+          <p id="" editor="rainDelay" />
         </cmd>
         <cmd id="STOP_ALL_STATIONS" />
         <cmd id="REBOOT" />
