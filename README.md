@@ -33,5 +33,5 @@ The settings for this node Short Poll, password, url, and manualRunTimeSeconds. 
 
 # Release Notes
 
-- 2022.1.16 01/16/2021
+- 2022.1.16 01/16/2022
    - Initial version published to github
