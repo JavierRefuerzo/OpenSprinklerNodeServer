@@ -32,7 +32,7 @@ The settings for this node Short Poll, password, url, and manualRunTimeSeconds. 
 
 1. Polyglot V3.
 2. ISY firmware 5.3.x or later
-3. Opensprinkler firmware 2.1.9 (2019) or later. Please be sure to backup open sprinkler before upgrading firmware as you settings will be removed! https://openthings.freshdesk.com/support/home see User Manuals and select your hardware 3.x or 2.x'
+3. Opensprinkler firmware 2.1.9 (2019) or later. Please be sure to backup open sprinkler before upgrading firmware as you settings will be removed! https://openthings.freshdesk.com/support/home see User Manuals and select your hardware 3.x or 2.x
 
 ## Known Issues and limitations
 
