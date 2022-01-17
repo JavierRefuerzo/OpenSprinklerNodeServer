@@ -1,6 +1,6 @@
 {
     "name": "OpenSprinkler Node Server",
-    "docs": "https://forum.universal-devices.com/forum/221-polyglot-v3-nodeservers-pg3/",
+    "docs": "https://forum.universal-devices.com/forum/323-opensprinkler/",
     "type": "python3",
     "executable": "initializer.py",
     "install": "install.sh",
@@ -21,8 +21,8 @@
     		"author": "Javier Refuerzo",
     		"version": "2022.1.16",
     		"date": "January 11, 2022",
-    		"source": "https://forum.universal-devices.com/forum/221-polyglot-v3-nodeservers-pg3/",
-			"license": "https://forum.universal-devices.com/forum/221-polyglot-v3-nodeservers-pg3/"
+    		"source": "https://github.com/JavierRefuerzo/OpenSprinklerNodeServer",
+			"license": "https://github.com/JavierRefuerzo/OpenSprinklerNodeServer"
 		}
 	],
 	"store" : {
