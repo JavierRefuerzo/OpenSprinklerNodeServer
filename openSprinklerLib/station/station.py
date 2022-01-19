@@ -14,7 +14,7 @@ class Master:
     master1: bool
     master2: bool
 
-
+#  -- This is only in 2.1.9 --
 class IgnoreRain:
     ignore: bool
     sensor1: bool
@@ -31,7 +31,7 @@ class Station :
     status: int
     statusListener: Callable = None
     
-    #TODO add these variables
+    #TODO add these variables   ----- This is only in 2.1.9 ---
     #ignoreRain: IgnoreRaing
     #master: Master
 

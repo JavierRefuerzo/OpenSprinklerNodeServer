@@ -39,7 +39,7 @@ class Options:
         print("parse options")
         self.errors = None
         self.fwv = request['fwv']
-        # if self.fwv < 219:
-        #     self.errors = Errors("Firmware 2.1.9 or greater required for this Node Server", ErrorValues.firmware.value)
+        if self.fwv < 216:
+            self.errors = Errors("Firmware 2.1.9 or greater required for this Node Server", ErrorValues.firmware.value)
         #this is the enabled flag it should be in controller variables also
         self.den_Listener.updateOnChange(request["den"])

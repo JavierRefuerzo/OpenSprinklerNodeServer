@@ -46,9 +46,11 @@ class Settings:
         #rain delay
         self.rd_Listener.updateOnChange(request['rd'] )
         # sensor 1 status
-        self.sn1_Listener.updateOnChange(request["sn1"])
+        if "sn1" in request:
+            self.sn1_Listener.updateOnChange(request["sn1"])
         # sensor 2 status
-        self.sn2_Listener.updateOnChange(request["sn2"])
+        if "sn2" in request:
+            self.sn2_Listener.updateOnChange(request["sn2"])
         #station status
         self.ps_Listener.updateOnChange(request["ps"])
         # ps has an array of arryas. one array for each station each array has 3 ints [0,0,0] the first it the program which started the station
