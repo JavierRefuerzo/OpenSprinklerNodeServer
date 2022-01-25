@@ -36,15 +36,18 @@ class ProgramNode(udi_interface.Node):
         LOGGER.info(' init')
         self.poly = polyglot
         self.program = program
-        self.program.statusListener = self.statusHandler
-        self.program.controller.settings.ps_Listener.attach(self.setRunningProgramDriver)
+       
         #change the station name to include stationId
         address = self.setAddress(stationId= program.id)
-        #set the station status
-        self.updateEnabledStatus()
+       
         #set station id
         super(ProgramNode, self).__init__(polyglot, parentAddress, address, program.name)
 
+        #set the station status
+        self.updateEnabledStatus()
+         # OBSERVERS MUST BE ADDED AFTER addNode(self) or there may be a crash as the address does not exist
+        self.program.statusListener = self.statusHandler
+        self.program.controller.settings.ps_Listener.attach(self.setRunningProgramDriver)
     
 
     def addNodeToISY(self):
