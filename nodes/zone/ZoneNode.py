@@ -49,27 +49,30 @@ class ZoneNode(udi_interface.Node):
 
         #Set initial values
         self.station = station
-        self.station.statusListener = self.statusHandler
-        self.station.controller.settings.ps_Listener.attach(self.setRunningProgramDriver)
+       
         #change the station name to include stationId
         address = self.setAddress(stationId= station.id)
 
         # Add global observer
         self.polyObserver: PolyglotObserver = polyObserver
-        #self.polyObserver.attachCustomParamObserver(self.parameterHandler)
-        self.polyObserver.customParams.attach(self.parameterHandler)
-        # params = Custom(polyglot, 'customparams')
-        # LOGGER.info('---------------------GET Custom params TEST ' + str(params))
-        # if params != None:
-        #     LOGGER.info('---------------------We have custom params')
-        #     self.polyObserver.attachCustomParamObserver(self.parameterHandler)
-
+       
         self.setInitialDrivers()
         
 
         # Add this node to ISY
         super(ZoneNode, self).__init__(polyglot, parentAddress, address, station.name)
         self.poly.addNode(self)
+
+        # OBSERVERS MUST BE ADDED AFTER addNode(self) or there may be a crash as the address does not exist
+        self.station.statusListener = self.statusHandler
+        self.station.controller.settings.ps_Listener.attach(self.setRunningProgramDriver)
+         #self.polyObserver.attachCustomParamObserver(self.parameterHandler)
+        self.polyObserver.customParams.attach(self.parameterHandler)
+        # params = Custom(polyglot, 'customparams')
+        # LOGGER.info('---------------------GET Custom params TEST ' + str(params))
+        # if params != None:
+        #     LOGGER.info('---------------------We have custom params')
+        #     self.polyObserver.attachCustomParamObserver(self.parameterHandler)
 
 
         #set the station status values
@@ -167,7 +170,7 @@ class ZoneNode(udi_interface.Node):
 
     
     commands = {
-        "MANUAL_RUN_TIME": cmdManualRunTime, 
+        "MANUAL_RUN_TIME": cmdManualRunTime, ~
         'DON': setOn,
         "DOF": setOff
     }
