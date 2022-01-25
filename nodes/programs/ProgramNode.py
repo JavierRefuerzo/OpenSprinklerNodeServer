@@ -45,7 +45,7 @@ class ProgramNode(udi_interface.Node):
 
         #set the station status
         self.updateEnabledStatus()
-         # OBSERVERS MUST BE ADDED AFTER addNode(self) or there may be a crash as the address does not exist
+        # OBSERVERS MUST BE ADDED AFTER addNode(self) or there may be a crash as the address does not exist
         self.program.statusListener = self.statusHandler
         self.program.controller.settings.ps_Listener.attach(self.setRunningProgramDriver)
     
