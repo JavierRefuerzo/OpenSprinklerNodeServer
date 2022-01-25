@@ -170,7 +170,7 @@ class ZoneNode(udi_interface.Node):
 
     
     commands = {
-        "MANUAL_RUN_TIME": cmdManualRunTime, ~
+        "MANUAL_RUN_TIME": cmdManualRunTime,
         'DON': setOn,
         "DOF": setOff
     }
