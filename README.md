@@ -38,7 +38,8 @@ The settings for this node Short Poll, password, url, and manualRunTimeSeconds. 
 
 1. Please allow upto one minuite after credentials and URL are saved before opeining the Admin consloe as it may take time to populate sprinkler Station and Program Nodes.
 2. OpenSprinkler idetifies Stations and Programs by index, so moving a program up or down from the OpenSprinkler Web or App interface will cause the Node Server to trigger the wrong program. If this is done please rename nodes in ISY or move back to previous position.
-3. When manually triggering a progarm from ISY it will not show as "Running". This is because OpenSprinkler assigns manually triggered programs to is 254 which is out of range of available programs.  The Node Server will still show as running in both the Parent Station Node ("Stations Queued") and the Main Parent Node ("Running Program")
+3. When manually triggering a progarm from ISY it will not show as "Running". This is because OpenSprinkler assigns manually triggered programs to ID 254 which is out of range of available programs.  The Node Server will still show as running in both the Parent Station Node ("Stations Queued") and the Main Parent Node ("Running Program")
+4. Starting multiple zones from an ISY program may require a 5 second delay between zones to allow OpenSprinkler to register a station as running.  If multiple zones are started before OpenSprinkler registers one as running then multiple zones may be started simultaneously.
 
 # Release Notes
 
