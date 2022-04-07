@@ -230,7 +230,7 @@ class Controller(udi_interface.Node):
         self.openSprinkler.settings.ps_Listener.attach(self.setRunningProgramDriver)
         self.openSprinkler.settings.ps_Listener.attach(self.zoneParent.setRunningProgramDriver)
 
-        #these are new values so they must me inserted
+        #these are new values so they must be inserted
         self.zoneParent.equals(self.openSprinkler.stationList)
         self.programList.equals(self.openSprinkler.programList)
 
