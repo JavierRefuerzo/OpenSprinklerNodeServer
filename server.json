@@ -1,5 +1,5 @@
 {
-    "name": "OpenSprinkler Node Server",
+    "name": "OpenSprinkler",
     "docs": "https://forum.universal-devices.com/forum/323-opensprinkler/",
     "type": "python3",
     "executable": "initializer.py",
