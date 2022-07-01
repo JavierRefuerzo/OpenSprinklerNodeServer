@@ -4,7 +4,6 @@ Polyglot v3 node server OpenSprinkler
 Copyright (C) 2021 Javier Refuerzo
 
 """
-from tkinter.messagebox import NO
 from typing import Callable
 from objects.errors import Errors
 from openSprinklerLib.controller.credenital import Credential
