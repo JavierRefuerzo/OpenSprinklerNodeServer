@@ -19,8 +19,8 @@
     	{
     		"title": "OpenSprinkler Node Server for ISY/Polyglot",
     		"author": "Javier Refuerzo",
-    		"version": "2022.07.01",
-    		"date": "July 1, 2022",
+    		"version": "2023.01.09",
+    		"date": "January 9, 2023",
     		"source": "https://github.com/JavierRefuerzo/OpenSprinklerNodeServer",
 			"license": "https://github.com/JavierRefuerzo/OpenSprinklerNodeServer"
 		}

@@ -9,5 +9,5 @@ python-dateutil==2.8.2
 python-dotenv==0.19.2
 requests==2.27.1
 six==1.16.0
-udi-interface==3.0.32
+udi-interface==3.0.51
 urllib3==1.26.8

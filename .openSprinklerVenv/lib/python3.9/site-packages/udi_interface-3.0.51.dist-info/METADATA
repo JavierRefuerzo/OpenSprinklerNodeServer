@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: udi-interface
+Version: 3.0.51
+Summary: UDI Python Interface for Polyglot version 3
+Home-page: https://github.com/UniversalDevicesInc/udi_python_interface
+Author: Universal Devices Inc.
+Author-email: bpaauwe@yahoo.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >3.6.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt
+Requires-Dist: python-dotenv
+Requires-Dist: markdown2
+Requires-Dist: netifaces
+Requires-Dist: requests
+Requires-Dist: pyisy (!=2.1.5,<3.0.0,>2.0)
+
+![Test And Publish](https://github.com/UniversalDevicesInc/udi-python-interface/workflows/Publish%20PyPI%20and%20TestPyPI/badge.svg "Test and Publish")
+
+# UDI Python Interface Module for Polyglot version 3
+
+This is the PG3 interface API module that is portable to be imported into your Python 3.4+ based NodeServers.
+
+### Installation
+
+Pip > 9 should be installed. This typically isn't the case, so you will have to upgrade Pip first.
+
+```
+# Check your pip version
+pip -V
+pip 9.0.1 from /home/e42/.local/lib/python2.7/site-packages (python 2.7)
+pip3 -V
+pip 9.0.1 from /usr/lib/python3/dist-packages (python 3.5)
+
+# If Pip is < Version 9
+sudo pip install -U pip
+```
+
+The module is updated in Pypi (Python's package interface Pip) on a regular basis. So simply install the module like you would any Python module:
+
+```
+# Install the UDI interface
+pip install udi_interface --user
+```
+
+### Starting your NodeServer build
+
+When you start building a NodeServer you are helping build the free and open Internet of Things. Thank you! If you run in to any issues please ask your questions on the [UDI Polyglot Forums](http://forum.universal-devices.com/forum/111-polyglot/).
+
+To get started, [use the python template.](https://github.com/UniversalDevicesInc/udi-poly-template-python)
+
+From there just read the code itself, it is fully explained step by step.
+
+### How to Enable your NodeServer in the Cloud
+
+[Link to PGC Interface](https://github.com/UniversalDevicesInc/pgc-python-interface/blob/master/README.md)
+
+### Controlling logging
+
+By default when the Polyglot Python Interface is started up the logging is in WARNING mode. If you want to change the level set logLevel: <level> in your server.json file.  Valid levels are:
+
+`CRITICAL` `ERROR` `WARNING` `INFO` `DEBUG`
